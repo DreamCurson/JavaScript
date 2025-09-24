@@ -1,0 +1,15 @@
+:root {
+  --couleur-blanc: #e8e8e8;
+
+  --couleur-info: #0000ff;
+  --couleur-info-hover: #0000cc;
+
+  --couleur-success: #047804;
+  --couleur-success-hover: #036603;
+
+  --couleur-erreur: #ff0000;
+  --couleur-erreur-hover: #cc0000;
+
+  --couleur-semi-transparent: #ffffff73;
+  --couleur-shadow: #00000033;
+}
