@@ -1,0 +1,56 @@
+/* Pour faire jolie... */
+@keyframes slideFadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.popup_test {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+
+  button {
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 6px;
+    color: var(--couleur-blanc);
+    font-weight: bold;
+    cursor: pointer;
+    box-shadow: 0 2px 5px var(--couleur-shadow);
+    transition: background-color 0.3s ease;
+
+    opacity: 0;
+    transform: translateY(20px);
+    animation: slideFadeIn 0.6s forwards;
+  }
+
+  .__info {
+    background-color: var(--couleur-info);
+  }
+
+  .__info:hover {
+    background-color: var(--couleur-info-hover);
+  }
+
+  .__erreur {
+    background-color: var(--couleur-erreur);
+  }
+
+  .__erreur:hover {
+    background-color: var(--couleur-erreur-hover);
+  }
+
+  .__succes {
+    background-color: var(--couleur-success);
+  }
+
+  .__succes:hover {
+    background-color: var(--couleur-success-hover);
+  }
+}
