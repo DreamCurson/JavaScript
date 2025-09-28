@@ -1,0 +1,13 @@
+.hautPage {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.hautPage__titre {
+  font-size: var(--texte_petit);
+}
+
+.hautPage__shoppingCart {
+  font-size: var(--texte_petit);
+}

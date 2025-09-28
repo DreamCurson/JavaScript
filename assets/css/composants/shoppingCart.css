@@ -1,0 +1,8 @@
+.shoppingCart {
+  cursor: pointer;
+  transition: ease-in-out var(--transition_douce);
+}
+
+.shoppingCart:hover {
+  color: var(--cart_hover);
+}
