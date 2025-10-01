@@ -9,7 +9,7 @@ class Livre {
     this.#prix = prix;
   }
 
-  _injecterHTML() {
+  #injecterHTML() {
     return `
       <div class="listeLivre__livre">
         <img src="${this.#image}" alt="${
@@ -30,7 +30,7 @@ class Livre {
 
     livres.forEach((livreData) => {
       const livre = new Livre(livreData);
-      htmlSelector.insertAdjacentHTML("beforeend", livre._injecterHTML());
+      htmlSelector.insertAdjacentHTML("beforeend", livre.#injecterHTML());
     });
   }
 }
