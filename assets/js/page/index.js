@@ -1,8 +1,9 @@
 import livres from "../data/livres.js";
-import afficherLivre from "../composants/Livres.js";
+import Livre from "../composants/Livres.js";
 
 function init() {
-  afficherLivre(livres);
+  const livre = new Livre({});
+  livre._afficherLivre(livres);
 }
 
 init();
