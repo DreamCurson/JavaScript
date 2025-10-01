@@ -1,6 +1,33 @@
 :root {
-  --texte_petit: 25px;
-  --cart_hover: #86ec5e;
+  /* Font Sizes */
+  --texte_petit: 0.9rem;
+  --texte_moyen: 1rem;
+  --texte_gros: 1.2rem;
 
+  /* Colors */
+  --couleur_fond: #eacfff;
+  --couleur_boite: #ffffff;
+  --couleur_bordure: #ddd;
+  --couleur_texte: #333;
+  --couleur_texte_secondaire: #2d3436;
+  --couleur_bouton: #7e32da;
+  --couleur_bouton_hover: #4e2086;
+  --cart_hover: rgb(172, 94, 236);
+
+  /* Image */
+  --image_hauteur: 240px;
+  --image_background: #f6d4ff35;
+
+  /* Border radius and spacing */
+  --rayon_boite: 12px;
+  --rayon_img: 8px;
+  --espacement_general: 1.5rem;
+  --espacement_petit: 0.5rem;
+
+  /* Transitions */
   --transition_douce: 350ms;
+
+  /* Shadows */
+  --ombre_legere: 0 4px 8px rgba(0, 0, 0, 0.05);
+  --ombre_hover: 0 6px 12px rgba(126, 50, 218, 0.2);
 }

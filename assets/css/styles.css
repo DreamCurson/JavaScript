@@ -3,6 +3,7 @@
 @import url("base/variables.css");
 
 @import url("composants/shoppingCart.css");
+@import url("composants/listeLivre.css");
 
 @import url("layout/main.css");
 @import url("layout/hautPage.css");

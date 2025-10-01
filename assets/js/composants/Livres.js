@@ -4,7 +4,7 @@ function afficherLivre(livres) {
   livres.forEach(function (livre) {
     const carte = `
     <div class="listeLivre__livre">
-        <img src="${livre.image}" alt="${livre.titre}" />
+        <img src="${livre.image}" alt="${livre.titre}" class="ListeLivre__img" />
         <h2>${livre.titre}</h2>
         <div class="listeLivre__prix_bouton">
             <p>${livre.prix} $</p>

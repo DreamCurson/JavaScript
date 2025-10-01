@@ -2,16 +2,9 @@
 - Manipuler des données statiques en format JSON
 - Écrire un code propre, bien structuré sans bug et sans avertissement
 
-### Sources de données
-
--> il vous faudra changer tous les chemins relatifs du fichier livres.js car c'est ainsi que les chemins ont été enregistrés.
-
 ### Affichage des tuiles
 
 - Afficher, selon la maquette, la liste des livres.
-
-- Chaque tuile d’un livre doit afficher
-  son image, son titre, son prix et un bouton pour l’ajouter au panier (celui-ci n'est pas fonctionnel pour l'instant).
 
 ### Filtres
 

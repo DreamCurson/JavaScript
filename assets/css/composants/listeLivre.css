@@ -1,0 +1,83 @@
+.listeLivre__livres {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 4rem 2rem;
+  padding: var(--espacement_general);
+}
+
+.listeLivre__livre {
+  cursor: pointer;
+  background-color: var(--couleur_boite);
+  border: 1px solid var(--couleur_bordure);
+  border-radius: var(--rayon_boite);
+  padding: 1.2rem;
+  text-align: center;
+  box-shadow: var(--ombre_legere);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  transition: transform var(--transition_douce),
+    box-shadow var(--transition_douce);
+  height: 100%;
+}
+
+.listeLivre__livre:hover {
+  transform: translateY(-6px);
+  box-shadow: var(--ombre_hover);
+}
+
+.ListeLivre__img {
+  width: 100%;
+  height: var(--image_hauteur);
+  object-fit: contain;
+  background-color: var(--image_background);
+  border-radius: var(--rayon_img);
+  margin-bottom: var(--espacement_petit);
+  display: block;
+  margin: 0 auto var(--espacement_petit);
+}
+
+.listeLivre__livre h2 {
+  font-size: var(--texte_moyen);
+  margin: var(--espacement_petit) 0;
+  color: var(--couleur_texte);
+}
+
+.listeLivre__prix_bouton {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: auto;
+}
+
+.listeLivre__prix_bouton p {
+  font-weight: bold;
+  font-size: var(--texte_moyen);
+  color: var(--couleur_texte_secondaire);
+}
+
+.Listelivre__bouton {
+  background-color: var(--couleur_bouton);
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: var(--texte_petit);
+  transition: background-color var(--transition_douce),
+    transform var(--transition_douce), box-shadow var(--transition_douce);
+
+  box-shadow: 0 4px 6px var(--ombre_hover);
+  transform: translateY(0);
+}
+
+.Listelivre__bouton:hover {
+  background-color: var(--couleur_bouton_hover);
+  transform: translateY(2px);
+  box-shadow: 0 2px 3px var(--ombre_hover);
+}
+
+.Listelivre__bouton:active {
+  transform: translateY(4px);
+  box-shadow: 0 1px 2px var(--ombre_hover);
+}

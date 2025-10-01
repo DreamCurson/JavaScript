@@ -5,9 +5,9 @@
 }
 
 .hautPage__titre {
-  font-size: var(--texte_petit);
+  font-size: var(--texte_gros);
 }
 
 .hautPage__shoppingCart {
-  font-size: var(--texte_petit);
+  font-size: var(--texte_gros);
 }
