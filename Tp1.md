@@ -10,17 +10,6 @@
 
 - Au chargement, les nouveautés sont affichées.
 
-- Il y a 8 filtres, ceux-ci sont :
-
-  - Tous
-  - Nouveautés
-  - Littérature
-  - Art de vivre
-  - BD, Jeunesse, Humour
-  - Culture et société
-  - Loisirs, Tourisme, Nature
-  - Savoir et science
-
 - Remarquez que `Nouveauté` n’est pas une catégorie mais bien une clé booléene présente pour chaque livre. Bref, au clic de Nouveauté, vous devez afficher tous livres où sa clé nouveaute est `true`.
 
 - Évitez la redondance et faites une seule fonction qui gère tous les filtres.
@@ -41,9 +30,10 @@ La boite modale doit être centrée à l’écran et le reste de la page doit ê
 Aucun script procédural n’est accepté : le fichier main.js ne sert qu’à lancer les instances de classes nécessaires au chargement de la page et chaque bloc fonctionnel devrait avoir sa classe.
 
 Vous aurez minimalement besoin
-d'une classe Livre,
-d'une classe LivreModale
-d'une classe Filtre
+
+- fait - d'une classe Livre,
+  d'une classe LivreModale
+  d'une classe Filtre
 
 mais vous pouvez ajouter d'autres classes si vous le jugez nécessaire.
 
