@@ -3,8 +3,16 @@
 @import url("base/variables.css");
 
 @import url("composants/shoppingCart.css");
+@import url("composants/livreModale.css");
 @import url("composants/filtre.css");
 @import url("composants/listeLivre.css");
 
 @import url("layout/main.css");
 @import url("layout/hautPage.css");
+
+@font-face {
+  font-family: "BigBesty";
+  src: url("../font/Bigbesty.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}

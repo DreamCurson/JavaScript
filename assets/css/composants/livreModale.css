@@ -1,0 +1,50 @@
+.livreModale-verrou {
+  overflow: hidden;
+  height: 100vh;
+}
+
+.livreModale {
+  position: fixed;
+  cursor: default;
+  z-index: 5000;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 80vw;
+  height: 90vh;
+  background-color: rgb(248, 236, 250);
+  border-radius: 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 3rem;
+}
+
+.livreModale__contenue {
+  display: flex;
+  flex-direction: column;
+}
+
+.livreModale__btn_fermer {
+  position: absolute;
+  font-family: "BigBesty";
+  top: 1rem;
+  right: 1rem;
+  cursor: pointer;
+  font-size: 1.5rem;
+  border: none;
+  color: #37253d;
+  background-color: #eabcf96b;
+  border-radius: 5px;
+  padding: 8px 7px 6px 7px;
+  transition: all 0.3s ease-in-out;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+}
+
+.livreModale__btn_fermer:hover {
+  color: #eabcf9;
+  background-color: #37253d;
+  transform: scale(0.95);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
+}
