@@ -3,7 +3,7 @@ class LivreModale {
   #titre;
   #auteur;
   #editeur;
-  #nbPages;
+  #pages;
   #description;
   #conteneurHTML;
 
@@ -12,7 +12,7 @@ class LivreModale {
     titre,
     auteur,
     editeur,
-    nbPages,
+    pages,
     description,
     conteneurHTML
   ) {
@@ -20,7 +20,7 @@ class LivreModale {
     this.#titre = titre;
     this.#auteur = auteur;
     this.#editeur = editeur;
-    this.#nbPages = nbPages;
+    this.#pages = pages;
     this.#description = description;
     this.#conteneurHTML = conteneurHTML;
 
@@ -35,7 +35,7 @@ class LivreModale {
         <h2 class="livreModale__titre">Titre : ${this.#titre}</h2>
         <p>Auteur : ${this.#auteur}</p>
         <p>Éditeur : ${this.#editeur}</p>
-        <p>Pages : ${this.#nbPages}</p>
+        <p>Pages : ${this.#pages}</p>
         <p>${this.#description}</p>
       </div>
     `;

@@ -57,7 +57,7 @@ class LivreManager {
           data.titre,
           data.auteur,
           data.editeur,
-          data.nbPages,
+          data.pages,
           data.description,
           this.#modaleContainer
         );
