@@ -1,4 +1,8 @@
-(à styliser plus tard)
+# TP1 - Création d'interface avec programmation orientée objet
 
-changement apporter au fichier data/livres.js :
-Retrait de l'export au début du fichier pour export default livres à la fin
+## Changement apporté au fichier `data/livres.js` :
+
+- Retrait de l'`export` au début du fichier.
+- Ajout de `export default livres` à la fin du fichier.
+
+## GitHub page :
