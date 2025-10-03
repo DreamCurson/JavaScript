@@ -5,5 +5,5 @@
 - ✅ Retrait de l'`export` au début du fichier.
 - ✅ Ajout de `export default livres` à la fin du fichier.
 
-## 🌐 GitHub page :
-🔗
+## 🔗 GitHub page :
+🌐 [Accéder à la page GitHub](https://dreamcurson.github.io/JavaScript/)
