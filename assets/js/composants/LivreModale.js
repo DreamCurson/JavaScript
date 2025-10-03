@@ -1,6 +1,3 @@
-// son image, son titre, son auteur, son éditeur, son nombre de pages et sa description.
-// La boite modale doit être centrée à l’écran et le reste de la page doit être assombri.
-// - Empêchez le scroll vertical de la page lorsque la boite modale est ouverte (N'oubliez pas de remettre le comportement correctement à la fermeture de celle-ci).
 class LivreModale {
   #image;
   #titre;
@@ -9,7 +6,6 @@ class LivreModale {
   #nbPages;
   #description;
   #conteneurHTML;
-  #elementHTML;
 
   constructor(
     image,
@@ -27,16 +23,39 @@ class LivreModale {
     this.#nbPages = nbPages;
     this.#description = description;
     this.#conteneurHTML = conteneurHTML;
-    this.#elementHTML;
 
     this._injecterHTML();
   }
 
-  _injecterHTML() {}
+  _injecterHTML() {
+    const gabarit = `
+      <img src="${this.#image}" alt="${this.#titre}" />
+      <div class="livreModale__contenue">
+        <div class="livreModale__btn_fermer">X</div>
+        <h2 class="livreModale__titre">Titre : ${this.#titre}</h2>
+        <p>Auteur : ${this.#auteur}</p>
+        <p>Éditeur : ${this.#editeur}</p>
+        <p>Pages : ${this.#nbPages}</p>
+        <p>${this.#description}</p>
+      </div>
+    `;
 
-  afficher() {}
+    this.#conteneurHTML.innerHTML = gabarit;
 
-  fermer() {}
+    this.#conteneurHTML
+      .querySelector(".livreModale__btn_fermer")
+      .addEventListener("click", this.fermer.bind(this));
+  }
+
+  afficher() {
+    this.#conteneurHTML.removeAttribute("id");
+    document.body.classList.add("livreModale-verrou");
+  }
+
+  fermer() {
+    this.#conteneurHTML.setAttribute("id", "livreModale-cache");
+    document.body.classList.remove("livreModale-verrou");
+  }
 }
 
 export default LivreModale;

@@ -3,6 +3,10 @@
   height: 100vh;
 }
 
+#livreModale-cache {
+  display: none;
+}
+
 .livreModale {
   position: fixed;
   cursor: default;

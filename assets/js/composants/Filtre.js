@@ -48,8 +48,8 @@ class Filtre {
       );
     }
 
-    // Affiche les livres filtré avec la fonction dans Livres.js
-    this.livre._afficherLivre(LivresFiltres);
+    // Affiche les livres filtré avec la fonction dans LivreManager.js
+    this.livre.rechargerListe(LivresFiltres);
   }
 
   clicFiltreSelection(filtreSelectionne) {
